@@ -1,0 +1,15 @@
+<H1>Register User</H1> 
+<!--This url tag connects back to the login page.-->
+<a href="{% url 'foodapp:home' %}">Back to Home page</a>
+<br>
+<!--This form submits to app path called register user-->
+<form action="{% url 'customers:register_user' %}" method="post">
+    {% csrf_token %}
+<!--This line loads Djangos default user registration page-->
+<!--Form has been modified by adding the First Name to it-->
+    {{form}}
+    
+    <br/><br/>
+
+<input type="submit" value="Register" />
+</form>

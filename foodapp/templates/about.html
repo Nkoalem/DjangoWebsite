@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'menu.css' %}">
+</head>
+<body>
+    <!--Everything will be inside the container-->
+    <div class="container">
+        <!--Creating the header-->
+        <header class="header flex">
+            <!--Inserting the logo-->
+            <div class="logo">
+                <img src="{% static 'logofoodaf.png' %}">
+            </div>
+            <h1 style="color: white;">AboutUs</h1>
+            <button>
+            <a href="{% url 'foodapp:home' %}">
+                <button type="button">Back to home</button>
+            </a>
+        </header>
+        <!--grid will contain images-->
+        <div class="grid">
+            <div class="grid-item1"><img src="{% static 'WhatsApp Image 2023-11-15 at 05.40.41.jpeg' %}" style="height: auto; max-width: 100%;">
+            <br> <br> <label type="label" style="color: white; background-color: black; padding: 10px;">Meet our dedicated staff</label>
+            </div>
+            
+            <div class="grid-item2"><img src="{% static 'WhatsApp Image 2023-11-15 at 05.40.42.jpeg' %}" style="height: auto; max-width: 100%;">
+            <br><br> <label type="label" style="color: white; background-color: black; padding: 10px;">Dedicated to delivering quality meals</label>
+            </div>
+            
+            <div class="grid-item3"><img src="{% static 'WhatsApp Image 2023-11-18 at 17.19.06.jpeg' %}" style="height: auto; max-width: 100%;">
+             <br><br> <label type="label" style="color: white; background-color: black; padding: 10px;">How to reach us</label></div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'menu.css' %}">
+</head>
+<body>
+    <!--Everything will be inside the container-->
+    <div class="container">
+        <!--Creating the header-->
+        <header class="header flex">
+            <!--Inserting the logo-->
+            <div class="logo">
+                <img src="{% static 'logofoodaf.png' %}">
+            </div>
+            <h1 style="color: white;"> FoodAF Menu </h1>
+            <button>
+            <a href="{% url 'foodapp:home' %}">
+                <button type="button">Back to home</button>
+            </a>
+        </header>
+        <!--grid will contain seperate menus-->
+        <div class="grid">
+            <!--Each grid block contains a pic and a link below to the related menu-->
+            <div class="grid-item1"><img src="{% static 'WhatsApp Image 2023-11-18 at 17.19.04.jpeg' %}" style="height: auto; max-width: 100%;">
+            <br> <a href="{% url 'foodapp:seafood' %}">
+                <button type="button">Seafood</button>
+                </a>
+            </div>
+            <!--Second grid that leads to the related menu menu-->
+            <div class="grid-item2"><img src="{% static 'WhatsApp Image 2023-11-18 at 17.19.00.jpeg' %}" style="height: auto; max-width: 100%;">
+            <br> <a href="{% url 'foodapp:meaty' %}">
+                <button type="button">Something meaty</button>
+                </a>
+            </div>
+        <!--Third grid that leads to the related menu menu-->
+            <div class="grid-item3"><img src="{% static 'WhatsApp Image 2023-11-18 at 17.19.42.jpeg' %}" style="height: auto; max-width: 100%;">
+            <br> <a href="{% url 'foodapp:platters' %}">
+                <button type="button">Platters</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

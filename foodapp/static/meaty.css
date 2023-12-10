@@ -1,0 +1,13 @@
+/* container */
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: beige;
+    margin-left: 14rem;
+}
+
+body {
+    background-color: beige;
+}

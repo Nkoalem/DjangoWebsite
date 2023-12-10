@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <h1> Login as User </h1>
+<!--this form submits to a path called authenticate_user in the user_auth app-->
+<form action="{% url 'customers:login_user' %}" method="post">
+    {% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+    <br/><br/>
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <br/><br/>
+<input type="submit" value="Login" />
+    <br><br>
+    <p>Not registered yet? Register here.</p>
+    <br>
+    <button type="button" value = "Register" style="background-color: grey; color: white; width: 120px ;">
+        <a href="{% url 'customers:register_user' %}">Click here to register</a>
+    </button>
+</form>
+
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+ }
+
+ body{
+    margin: 0
+ }
+/* container */
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+ }
+
+ .flex {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+ }
+
+ /* Header style and logo sizing*/
+ .header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:2px;
+ }
+
+ .header > .logo > img{
+   width: 100px;
+ }
+
+.header > .logo {
+   width: 120%;
+}
+.header flex , h1{
+    margin-right: 5rem;
+    text-align: left;
+    margin-left:0;
+ }
+ 
+/* styling the back to home button */
+ .header button {
+   width: 120px;
+   height: 40px;
+   color: white;
+   background-color: black;
+   border: white;
+   margin-left: 0.5em;
+   text-decoration: underline;
+   padding: 5px;
+   font-size: 15px;
+ }
+
+/*styling the text in the header*/
+.header , h1{
+    margin-right: 15em;
+    text-align: left;
+    margin-left:0;
+ }
+ .button {
+    margin-left: 2em;
+    color: white;
+    text-decoration: none;
+ }
+
+
+/* Grid styling*/
+.grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 10px;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: minmax(200px,auto);
+}
+
+/* setting up grid properties for each individual grid item*/
+
+.grid-item1 {
+    grid-row: 1/4;
+    background-color: rgb(249, 249, 213);
+    padding: 5px;
+
+}
+
+.grid-item2 {
+    grid-row: 1/4;
+    background-color: rgb(249, 249, 213);
+    padding: 5px;
+}
+
+.grid-item3 {
+    grid-row: 1/4;
+    background-color: rgb(249, 249, 213);
+    padding: 5px;
+}
+
+.grid-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* or "contain" */
+}
+
+/* styling buttons in the menu page */
+.grid-item1 button {
+   width: 120px;
+   height: 40px;
+   color: white;
+   background-color: black;
+   border: white;
+   margin-left: 8em;
+   text-decoration: underline;
+   padding: 5px;
+   font-size: 15px;
+
+}
+
+.grid-item2 button {
+   width: 120px;
+   height: 40px;
+   color: white;
+   background-color: black;
+   border: white;
+   margin-left: 8em;
+   text-decoration: underline;
+   padding: 5px;
+   font-size: 15px;
+}
+
+.grid-item3 button {
+   width: 120px;
+   height: 40px;
+   color: white;
+   background-color: black;
+   border: white;
+   margin-left: 8em;
+   text-decoration: underline;
+   padding: 5px;
+   font-size: 15px;
+}
+

@@ -31,7 +31,9 @@ Start the server using the command:
 
 Admin login credentials for database : username: nkoal
 password: admin2024
-![Screenshot 2023-11-20 13 20 51](https://github.com/Nkoalem/DjangoWebsite/assets/97555990/6c70f707-828a-4510-810a-1db7143f9e4b)
+
+![image](https://github.com/Nkoalem/DjangoWebsite/assets/97555990/70dd42b4-2d0e-473a-a47d-7985d022a4c4)
+
 
 from there on, users can navigate around the website.
 

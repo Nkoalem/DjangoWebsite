@@ -29,8 +29,7 @@ To activate the virtual environment, simply type in:
 Start the server using the command: 
     $ python manage.py runserver
 
-Admin login credentials for database : username: nkoal
-password: admin2024
+Admin login credentials for database : create superuser with password
 
 ![image](https://github.com/Nkoalem/DjangoWebsite/assets/97555990/70dd42b4-2d0e-473a-a47d-7985d022a4c4)
 
